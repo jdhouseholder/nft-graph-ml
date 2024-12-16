@@ -53,7 +53,7 @@ parser.add_argument(
     nargs='?',
     default=25
 )
-parser.add_argument("data-path")
+parser.add_argument("data_path")
 args = parser.parse_args()
 
 experiment_id = f"conv={args.conv}-decoder={args.decoder}-hidden_layers={args.hidden_layers}-batch_size={args.batch_size}-lr={args.lr}"
